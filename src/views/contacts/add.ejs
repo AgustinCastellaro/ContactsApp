@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body>
+    <div class="add">
+        <div class="card">
+            <p class="title">Add Contact</p>
+            <form action="/contacts/add" method="POST">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="number" placeholder="Phone number">
+                <button>Add</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+    <body>
+        <div class="delete">
+            <div class="card">
+                <p class="title">Delete Contact</p>
+                <form action="/contacts/delete/<%- contact.id %>" method="POST">
+                    <p class="message">¿Are you sure you want to delete the contact?</p>
+                    <p class="name"><%- contact.name %></p>
+                    <button>Delete</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

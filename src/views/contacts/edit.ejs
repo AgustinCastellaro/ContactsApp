@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+    <body>
+        <div class="edit">
+            <div class="card">
+                <p class="title">Edit Contact</p>
+                <form action="/contacts/edit/<%- contact.id %>" method="POST">
+                    <input type="text" name="name" placeholder="Name" value="<%- contact.name %>">
+                    <input type="text" name="number" placeholder="Phone number" value="<%- contact.number %>">
+                    <button>Save</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

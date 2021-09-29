@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+<body>
+    <%- include('./partials/navbar', {fullname: user.fullname}) %>
+    <div class="contacts">
+        <% if(contacts.length){ %>
+            <% for(var i=0; i < contacts.length; i++){ %>
+                <div class="contact">
+                    <p class="name"><%= contacts[i].name %></p>
+                    <p class="number"><%= contacts[i].number %></p>
+                    <div class="buttons">
+                        <a href="/contacts/edit/<%= contacts[i].id %>" class="editContact">Edit</a>
+                        <a href="/contacts/delete/<%= contacts[i].id %>" class="deleteContact">Delete</a>
+                    </div>
+                </div>
+            <% } %>
+        <% }else{ %>
+            <div class="addNewContact">
+                <p class="message">No contacts add yet</p>
+                <p>Add new contact!</p>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

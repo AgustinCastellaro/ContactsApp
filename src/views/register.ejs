@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+<body>
+    <div class="register">
+        <div class="card">
+            <p class="title">Register page</p>
+            <form action="/register" method="POST">
+                <input type="text" name="username" placeholder="User name">
+                <input type="password" name="password" placeholder="password">
+                <input type="text" name="fullname" placeholder="Full name">
+                <button>Register</button>
+            </form>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+</body>
+</html>

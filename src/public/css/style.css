@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background: rgb(233, 233, 233);
+}
+
+
+/* Nav */
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background: #0f1826;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .logo img{
+    margin: 0 15px 0 0;
+    width: 30px;
+}
+
+nav > a{
+    margin: 0 0 0 auto;
+    padding: 12px 25px;
+    background: #3c873a;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav > a:hover{
+    background: #337431;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a,
+nav ul li p{
+    margin: 0 0 0 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover,
+nav ul li p:hover{
+    text-decoration: underline;
+}
+
+nav ul li a img{
+    width: 20px;
+}
+
+
+/* Home */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home .title{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #0f1826;
+    letter-spacing: 2px;
+}
+
+.home .subTitle{
+    font-size: 20px;
+    font-weight: 400;
+    color: #151f2e;
+    letter-spacing: 2px;
+}
+
+.home img{
+    width: 150px;
+}
+
+.home a{
+    margin: 40px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0;
+    padding: 15px 25px;
+    color: #fff;
+    background: #151f2e;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home a:hover{
+    background: #0f1826;
+}
+
+
+/* Card */
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 30px;
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.15);
+}
+
+.card .title{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px;
+    letter-spacing: 1px;
+    color: #0f1826;
+}
+
+.card form{
+    display: flex;
+    flex-direction: column;
+}
+
+.card input{
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 15px;
+    color: #151f2e;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.card input:focus{
+    padding: 14px;
+    border: 2px solid #151f2e;
+}
+
+.card button{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    background: #151f2e;
+    border: 2px solid #151f2e;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background: #0f1826;
+}
+
+.card a{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 15px;
+    color: #151f2e;
+    background: #fff;
+    border: 2px solid #151f2e;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card a:hover{
+    background: #e9e9e9;   
+}
+
+
+.login, 
+.register, 
+.add, 
+.edit, 
+.delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Contacts */
+.contacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.15);
+}
+
+.contact p{
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #151f2e;
+}
+
+.contact .buttons{
+    margin: 20px 0;
+}
+
+.contact .buttons a{
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 80px;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.contact .deleteContact{
+    background: #CB4335;
+}
+
+.contact .deleteContact:hover{
+    background: #af382b;
+}
+
+.contact .editContact{
+    background: #2E86C1;
+}
+
+.contact .editContact:hover{
+    background: #2779af;
+}
+
+.contacts .addNewContact{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.addNewContact .message{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #474747;
+}
+
+
+/* Delete contact */
+.delete .message{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.delete .name{
+    margin: 10px 0;
+    font-size: 15px;
+}
